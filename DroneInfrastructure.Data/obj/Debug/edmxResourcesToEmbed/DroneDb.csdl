@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LogParserClientDbModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DroneDbEntities" p1:LazyLoadingEnabled="true">
+    <FunctionImport Name="AddNewRequest">
+      <Parameter Name="DateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="ServerIPAddress" Mode="In" Type="String" />
+      <Parameter Name="ClientIPAddress" Mode="In" Type="String" />
+      <Parameter Name="RequestLength" Mode="In" Type="Int32" />
+      <Parameter Name="OriginatingLogFile" Mode="In" Type="String" />
+      <Parameter Name="OriginatingLogFilePath" Mode="In" Type="String" />
+      <Parameter Name="FileLineNumber" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

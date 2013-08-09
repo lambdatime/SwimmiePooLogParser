@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/Views/Home/IndexJs")
+}
+
+<div id="error" class="validation-summary-errors">
+</div>
+
+<h2> Add Log Parser Drone</h2>
+<form action="" data-bind="submit: addDrone" class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="droneName">Drone Alias</label>
+        <div class="controls">
+            <input id="droneName" type="text" class="input-xlarge" data-bind="value: newDroneText" placeholder="Your name for the drone"/><br/>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="baseUrl">Drone Url</label>
+        <div class="controls">
+            <input id="baseUrl" type="text" class="input-xlarge" data-bind="value: newDroneBaseUrl" placeholder="The drone's base url"/><br/>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <input class="btn btn-primary" type="submit" value="Add Parsing Drone"/>
+        </div>
+    </div>
+</form>
+
+<h2>All Drones</h2>
+
+<table id="droneTable" class="table table-hover table-condensed" >
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>BaseUrl</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody data-bind="template: { name: 'droneTemplate', foreach: drones }, visible: drones().length > 0, attr: { 'class': listCssClass }">
+    </tbody>
+</table>
+
+<script type="text/html" id="droneTemplate">
+    <tr style="list-style-image: url('/Content/images/task.png')" data-bind="attr: { 'data-ref': Id, 'class': StatusRowClass }">
+        <td><input class="input-xlarge" data-bind="value: Title" /></td>
+        <td><input class="input-xlarge" data-bind="value: BaseUrl" /></td>
+        <td><span rel="tooltip" data-placement="top" data-bind="
+    text: Status().StatusName,
+    attr: {
+        'data-original-title': Status().StatusAlt,
+        'class': StatusTooltipCssClass
+    }"></span></td>
+        <td><a class="btn btn-mini" href="#" data-bind="click: remove">Remove</a> /
+            <a href="#" class="btn btn-mini" 
+                data-bind="
+                    click: enableProcessing,
+                    disableClick: DisableProcessing()
+                ">Enable</a> /
+            <a href="#" class="btn btn-mini" 
+                data-bind="
+                    click: abort,
+                    disableClick: DisableAbort()
+                ">Abort</a> /
+        </td>
+    </tr>
+</script>
+
+@*@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                To learn more about ASP.NET MVC visit
+                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
+                If you have any questions about ASP.NET MVC visit
+                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+            </p>
+        </div>
+    </section>
+}
+<h3>We suggest the following:</h3>
+<ol class="round">
+    <li class="one">
+        <h5>Getting Started</h5>
+        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+        enables a clean separation of concerns and that gives you full control over markup
+        for enjoyable, agile development. ASP.NET MVC includes many features that enable
+        fast, TDD-friendly development for creating sophisticated applications that use
+        the latest web standards.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
+    </li>
+
+    <li class="two">
+        <h5>Add NuGet packages and jump-start your coding</h5>
+        NuGet makes it easy to install and update free libraries and tools.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
+    </li>
+
+    <li class="three">
+        <h5>Find Web Hosting</h5>
+        You can easily find a web hosting company that offers the right mix of features
+        and price for your applications.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
+    </li>
+</ol>*@

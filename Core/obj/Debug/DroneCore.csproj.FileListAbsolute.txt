@@ -1,0 +1,9 @@
+D:\DevProjects\SwimmiePooLogParser\Core\bin\Debug\SwimmiePooLogParserDrone.Core.dll
+D:\DevProjects\SwimmiePooLogParser\Core\bin\Debug\SwimmiePooLogParserDrone.Core.pdb
+D:\DevProjects\SwimmiePooLogParser\Core\obj\Debug\DroneCore.csprojResolveAssemblyReference.cache
+D:\DevProjects\SwimmiePooLogParser\Core\obj\Debug\SwimmiePooLogParserDrone.Core.dll
+D:\DevProjects\SwimmiePooLogParser\Core\obj\Debug\SwimmiePooLogParserDrone.Core.pdb
+D:\Dev\Home\SwimmiePooLogParser\Core\bin\Debug\SwimmiePooLogParserDrone.Core.dll
+D:\Dev\Home\SwimmiePooLogParser\Core\bin\Debug\SwimmiePooLogParserDrone.Core.pdb
+D:\Dev\Home\SwimmiePooLogParser\Core\obj\Debug\SwimmiePooLogParserDrone.Core.dll
+D:\Dev\Home\SwimmiePooLogParser\Core\obj\Debug\SwimmiePooLogParserDrone.Core.pdb

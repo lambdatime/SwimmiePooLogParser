@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SwimmiePooLogParserDispatcher.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ArchiveLogDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Dev\Home\SwimmiePooLogParser\SwimmiePooLogParserDispatcher\App_Data\ArchivedLogs\</Value>
+    </Setting>
+    <Setting Name="LogDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Dev\Home\SwimmiePooLogParser\SwimmiePooLogParserDispatcher\App_Data\Logs\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

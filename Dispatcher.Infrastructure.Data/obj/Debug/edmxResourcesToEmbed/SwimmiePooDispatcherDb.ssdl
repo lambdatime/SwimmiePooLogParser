@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SwimmiePooLogParserDispatcherModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="SwimmiePooLogParserDispatcherModelStoreContainer">
+    <EntitySet Name="CurrentParseLines" EntityType="SwimmiePooLogParserDispatcherModel.Store.CurrentParseLines" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Drones" EntityType="SwimmiePooLogParserDispatcherModel.Store.Drones" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="CurrentParseLines">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FileName" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="Path" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="LineNumber" Type="int" Nullable="false" />
+    <Property Name="Line" Type="varchar(max)" Nullable="false" />
+    <Property Name="DroneId" Type="int" />
+  </EntityType>
+  <EntityType Name="Drones">
+    <Key>
+      <PropertyRef Name="DroneId" />
+    </Key>
+    <Property Name="DroneId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="140" />
+    <Property Name="BaseUrl" Type="nvarchar" Nullable="false" MaxLength="140" />
+    <Property Name="ModifiedOn" Type="datetime" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+  </EntityType>
+  <Function Name="AddParseLine" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FileName" Type="varchar" Mode="In" />
+    <Parameter Name="Path" Type="varchar" Mode="In" />
+    <Parameter Name="LineNumber" Type="int" Mode="In" />
+    <Parameter Name="Line" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="ClearTheParsed" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FileName" Type="varchar" Mode="In" />
+    <Parameter Name="Path" Type="varchar" Mode="In" />
+  </Function>
+</Schema>

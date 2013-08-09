@@ -1,0 +1,9 @@
+D:\DevProjects\SwimmiePooLogParser\CommonCore\bin\Debug\SwimmiePooLogParser.Common.dll
+D:\DevProjects\SwimmiePooLogParser\CommonCore\bin\Debug\SwimmiePooLogParser.Common.pdb
+D:\DevProjects\SwimmiePooLogParser\CommonCore\obj\Debug\SwimmiePooLogParser.Common.dll
+D:\DevProjects\SwimmiePooLogParser\CommonCore\obj\Debug\SwimmiePooLogParser.Common.pdb
+D:\Dev\Home\SwimmiePooLogParser\CommonCore\bin\Debug\SwimmiePooLogParser.Common.dll
+D:\Dev\Home\SwimmiePooLogParser\CommonCore\bin\Debug\SwimmiePooLogParser.Common.pdb
+D:\Dev\Home\SwimmiePooLogParser\CommonCore\obj\Debug\SwimmiePooLogParser.Common.dll
+D:\Dev\Home\SwimmiePooLogParser\CommonCore\obj\Debug\SwimmiePooLogParser.Common.pdb
+D:\DevProjects\SwimmiePooLogParser\CommonCore\obj\Debug\CommonCore.csprojResolveAssemblyReference.cache

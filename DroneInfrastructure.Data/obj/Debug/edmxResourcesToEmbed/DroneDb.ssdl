@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LogParserClientDbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LogParserClientDbModelStoreContainer" />
+  <Function Name="AddNewRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DateTime" Type="datetime" Mode="In" />
+    <Parameter Name="ServerIPAddress" Type="varchar" Mode="In" />
+    <Parameter Name="ClientIPAddress" Type="varchar" Mode="In" />
+    <Parameter Name="RequestLength" Type="int" Mode="In" />
+    <Parameter Name="OriginatingLogFile" Type="nvarchar" Mode="In" />
+    <Parameter Name="OriginatingLogFilePath" Type="nvarchar" Mode="In" />
+    <Parameter Name="FileLineNumber" Type="int" Mode="In" />
+  </Function>
+</Schema>

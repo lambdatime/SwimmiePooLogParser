@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SwimmiePooLogParserDispatcherModelStoreContainer" CdmEntityContainer="SwimmiePooLogParserDispatcherEntities">
+    <EntitySetMapping Name="Drones">
+      <EntityTypeMapping TypeName="SwimmiePooLogParserDispatcherModel.Drone">
+        <MappingFragment StoreEntitySet="Drones">
+          <ScalarProperty Name="DroneId" ColumnName="DroneId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="BaseUrl" ColumnName="BaseUrl" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurrentParseLines">
+      <EntityTypeMapping TypeName="SwimmiePooLogParserDispatcherModel.CurrentParseLine">
+        <MappingFragment StoreEntitySet="CurrentParseLines">
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="DroneId" ColumnName="DroneId" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AddParseLine" FunctionName="SwimmiePooLogParserDispatcherModel.Store.AddParseLine" />
+    <FunctionImportMapping FunctionImportName="ClearTheParsed" FunctionName="SwimmiePooLogParserDispatcherModel.Store.ClearTheParsed" />
+  </EntityContainerMapping>
+</Mapping>

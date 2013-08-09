@@ -1,0 +1,10 @@
+D:\DevProjects\SwimmiePooLogParser\DispatcherCore\bin\Debug\SwimmiePooLogParserDispatcher.Core.dll
+D:\DevProjects\SwimmiePooLogParser\DispatcherCore\bin\Debug\SwimmiePooLogParserDispatcher.Core.pdb
+D:\DevProjects\SwimmiePooLogParser\DispatcherCore\obj\Debug\DispatcherCore.csprojResolveAssemblyReference.cache
+D:\DevProjects\SwimmiePooLogParser\DispatcherCore\obj\Debug\SwimmiePooLogParserDispatcher.Core.dll
+D:\DevProjects\SwimmiePooLogParser\DispatcherCore\obj\Debug\SwimmiePooLogParserDispatcher.Core.pdb
+D:\Dev\Home\SwimmiePooLogParser\DispatcherCore\bin\Debug\SwimmiePooLogParserDispatcher.Core.dll
+D:\Dev\Home\SwimmiePooLogParser\DispatcherCore\bin\Debug\SwimmiePooLogParserDispatcher.Core.pdb
+D:\Dev\Home\SwimmiePooLogParser\DispatcherCore\obj\Debug\DispatcherCore.csprojResolveAssemblyReference.cache
+D:\Dev\Home\SwimmiePooLogParser\DispatcherCore\obj\Debug\SwimmiePooLogParserDispatcher.Core.dll
+D:\Dev\Home\SwimmiePooLogParser\DispatcherCore\obj\Debug\SwimmiePooLogParserDispatcher.Core.pdb
